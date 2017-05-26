@@ -1,0 +1,111 @@
+@import '//fonts.googleapis.com/css?family=Aguafina%20Script';
+@import "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css";
+@import url('primeng/resources/primeng.min.css');
+@import url('primeng/resources/themes/bootstrap/theme.css');
+
+
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: lightblue;
+  background-repeat: repeat;
+}
+
+a {
+  color: #00B7FF;
+  cursor: pointer;
+}
+
+a:hover,
+a:active {
+  color: #00B7FF;
+  text-decoration: underline;
+}
+
+a.danger {
+  color: red;
+}
+
+.spacing {
+  margin-bottom: 20px;
+}
+
+input.ng-invalid.ng-touched {
+  border: 1px solid red;
+}
+
+.center-pills 
+{
+  display: flex;
+  justify-content:center;
+}
+
+
+.resize_fit_center {
+  max-width:50%;
+  max-height:50%;
+  margin: auto;
+  display: block;
+}
+
+.header-title
+{
+  text-align: center;
+  font-family: "Aguafina Script";
+}
+
+.our-wedding-title
+{
+  text-align: center;
+  font-family: "Aguafina Script";
+  vertical-align: bottom;
+}
+
+.rsvp-radio
+{
+  display: inline-block;
+  vertical-align: center;
+  margin: 0 auto;
+}
+
+.sebm-google-map-container {
+  height: 500px;
+}
+
+.selectedImage{
+  width: auto;
+  height: auto;
+  position: relative;
+}
+
+caption{
+	position:absolute;
+  height:70px;
+	width:100%;
+	top:410;
+	left:0;
+	opacity:0.9;
+	background-color:black;
+	color:white;
+	padding:5px;
+	font-family:verdana;
+	font-size:12px;
+}
+
+p {
+   -webkit-margin-before: 5px !important;
+   -webkit-margin-after: 5px !important;
+}
+
+address{
+  font-family:veranda;
+  font-size:36px;
+}
+
+.datatable-center {
+  display:flex;
+}
+
+.form-padding {
+  padding: 5px;
+}

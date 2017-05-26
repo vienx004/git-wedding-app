@@ -1,0 +1,13 @@
+<address><strong>Name of Place</strong></address>
+<address>Address: 1234 fake st, city, state, zip</address>
+<sebm-google-map [zoom]="16" [latitude]="lat" [longitude]="lng">
+  <sebm-google-map-marker [latitude]="lat" [longitude]="lng" (markerClick)="onNavigate()"></sebm-google-map-marker>
+</sebm-google-map>
+
+<br>
+
+<form #n="ngForm">
+  <div align="center">
+    <button class="btn btn-primary" type=button (click)="onNavigate(n)">Navigate</button>
+  </div>
+</form>

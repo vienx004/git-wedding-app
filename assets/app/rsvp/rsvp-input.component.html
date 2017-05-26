@@ -1,0 +1,24 @@
+<div class="container col-md-4 col-md-offset-4">   
+            <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+                <div class="form-group">
+                    <input id="firstName" class="form-control" [ngModel]="rsvp?.firstName" name="firstName" type="text" placeholder="First Name">
+                    <input id="lastName" class="form-control form-padding" [ngModel]="rsvp?.lastName" name="lastName" type="text" placeholder="Last Name">
+                    <input id="email" class="form-control form-padding" [ngModel]="rsvp?.email" name="email" type="email" placeholder="Email">
+                    <div align="center">
+                    <label>
+                        <input class="rsvp-radio form-padding" id="going" [ngModel]="rsvp?.response" name="response" type="radio" value="going">
+                        Going
+                    </label>
+                    <label>
+                        <input class="rsvp-radio form-padding" id="notGoing" [ngModel]="rsvp?.response" name="response" type="radio" value="not going">
+                        Not Going
+                    </label>
+                    </div>
+                <div align="center">
+                    <button class="btn btn-primary" type="submit">Submit</button>
+                    <button class="btn btn-primary" type="button" (click)="onFind(f)">FindMe</button>
+                    <button class="btn btn-danger" type="button" (click)="onClear(f)">Clear</button>
+                </div>
+                </div>
+            </form>
+</div>

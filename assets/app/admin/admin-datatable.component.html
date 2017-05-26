@@ -1,0 +1,13 @@
+<p-dataTable [paginator]="true" [pageLinks]="3" [rows]="10" [value]="rsvps" [editable]="true" [responsive]="true">
+    <p-header>RSVP List</p-header>
+    <p-footer><div class="ui-helper-clearfix" style="width:100%"><button type="button" class="btn-primary" style="float:right;font-size:36">Save</button></div></p-footer>
+    <p-column field="firstName" header="FirstName" [sortable]="true"></p-column>
+    <p-column field="lastName" header="LastName" [sortable]="true"></p-column>
+    <p-column field="email" header="Email" [sortable]="true"></p-column>
+    <p-column field="response" header="Response" [sortable]="true">
+        <template let-rsvp="rowData" pTemplate type="body">
+            {{rsvp.response}}
+        </template>
+    </p-column>
+    <p-column field="table" header="Table" [sortable]="true" [editable]="true"></p-column>
+</p-dataTable>
